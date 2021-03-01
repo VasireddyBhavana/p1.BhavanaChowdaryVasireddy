@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html>
 
 <head>
@@ -10,22 +10,37 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap');
 
 .bg {
-    background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/chatbg.png");
+    background-color: #4f412f;
     text-align: center;
     font-family: Roboto;
-}
-.card1 {
-    background-color: #e3ccca;
-    color: #323f4b;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 15px;
-    padding: 10px;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
 }
 
- 
+.bg1 {
+    
+    height: 50vh;
+    background-size: cover;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.card1 {
+    background-color: #cccac8;
+    color: #323f4b;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    padding: 10px;
+}
 
 .card2 {
-    background-color: #d6d993;
+    background-color: #cccac8;
     color: #323f4b;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
@@ -34,30 +49,22 @@
     padding: 10px;
 }
 
- 
 
-.card3 {
-    background-color: #b8c3de;
-    color: #323f4b;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-    border-bottom-right-radius: 30px;
-    padding: 10px;
+.head {
+    font-family: Bree Serif;
 }
 
- 
-
- 
-
+.column {
+    float: left;
+    width: 50%;
+    padding: 0 10px;
+}
 
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-
- 
 
 @media screen and (max-width: 600px) {
     .column {
@@ -67,43 +74,45 @@
     }
 }
 
- 
-
-
-  </style>
+.para {
+    font-family: Roboto;
+    font-weight: bold;
+}
+</style>
+</head>
 <body>
 
- 
-
     <div class="bg">
-        <h1 class="text-light bg-secondary">MICROWAVE REPORT</h1>
+        <h1 class="text-light bg-secondary">Project 1 REPORT</h1>
     </div>
     <div class="row">
         <div class="column">
-                    <p><img src="Images/Oven.png"/></p>;
-                    <p><img src="Images/p1BhavanaChowdaryVasireddy.gif"/></p>;
-            
+            <p>
+                <img src="Image/p1BhavanaChowdaryVasireddy.gif"/>
+            </p>
+            <div class="bg1 d-flex flex-column justify-content-end">
+                <div class="card1">
+                    <h1 class="head">Control Interface</h1>
+                    <p class="para">The microwave has all the basic options like cook, defrost, timer, start/stop etc available for the user so that they can use the microwave as per their need.</p>
+                </div>
+            </div>
         </div>
-
- 
 
 
         <div class="column">
-           
-                    
-                    <h1>Control Interface</h1>
-                    <p>This has all the basic options available for the user to utilize microwave efficiently.</p>
-                    <h1>MicroWave Functioning</h1>
-                    <p>There is a turn table plate inside the microwave. The items to be prepared will be placed on this table. It also consists of sensors,lights, fuses etc.</p>
-             
+            <p>
+                <img src="Image/Oven.png"/>
+            </p>
+            <div class="bg1 d-flex flex-column justify-content-end">
+                <div class="card1">
+                    <h1 class="head">MicroWave Functioning</h1>
+                    <p class="para">Microwave has 2 modes of operation where the user can select based on his requirement either from the instant cooking options or by selecting the timer manually.</p>
+                </div>
+            </div>
         </div>
-
- 
 
     </div>
     <br>
-
- 
 
     <div class="card2">
         <br>
@@ -159,6 +168,15 @@
         </ol>
         <br>
         <br>
+        <h2>My Interface</h2>
+        <ol>
+            <p><img src="Image/My-Oven.png"/></p>
+            <p>My current interface has less options and user can utilize it more effectively</P>
+        </ol>
+    </div>
+</body>
+
+</html>
         <h2>My Interface</h2>
         <ol>
             <p><img src="Image/My-Oven.png"/></p>
