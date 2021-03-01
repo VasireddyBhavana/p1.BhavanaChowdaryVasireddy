@@ -59,7 +59,7 @@ void draw() {
 }
 int timer = 0;
 int door = 0;
-int cooktime = 0;
+int settime = 0;
 int timer1=0;
 
 String[] count(){
@@ -97,7 +97,7 @@ String[] count(){
  if (door==1){
    timer=0;
  }
-  if (cooktime==1){
+  if (settime==1){
     sec=String.valueOf(sec1);
     min=String.valueOf(min1);
     if (sec1<10){
@@ -116,26 +116,26 @@ String[] count(){
 }
 void mouseClicked(){
    if(mouseX> 700 && mouseX < 780 && mouseY>120 && mouseY<170){ 
-   /*if cooktime ==1 checks if the use is inputing with coook time or not. Cook time lets them enter the amount of seconds
+   /*if settime ==1 checks if the use is inputing with coook time or not. Cook time lets them enter the amount of seconds
    The default settind deals in minutes. It does this for every numbered button.
    */
-  if(cooktime==1){
+  if(settime==1){
     timer1=(timer1*10)+((3600*1)/60);
   }
-  else if(cooktime==0){
+  else if(settime==0){
     timer += 3600; 
    }
   }
   if(mouseX> 785 && mouseX < 860 && mouseY>120 && mouseY<170){ 
-  if(cooktime==1){
+  if(settime==1){
     timer1=(timer1*10)+((3600*2)/60);
   }
-  else if(cooktime==0){
+  else if(settime==0){
      timer += (3600*2); 
    }
   }
   if(mouseX> 870 && mouseX < 960 && mouseY>120 && mouseY<170){ 
-   if(cooktime==1){
+   if(settime==1){
     timer1=(timer1*10)+((3600*3)/60);
   }
   else{
@@ -143,7 +143,7 @@ void mouseClicked(){
    }
   }
   if(mouseX> 700 && mouseX < 780 && mouseY>180 && mouseY<230){ 
-    if(cooktime==1){
+    if(settime==1){
     timer1=(timer1*10)+((3600*4)/60);
   }
   else{
@@ -151,7 +151,7 @@ void mouseClicked(){
    }
   }
   if(mouseX> 785 && mouseX < 860 && mouseY>180 && mouseY<230){ 
-   if(cooktime==1){
+   if(settime==1){
     timer1=(timer1*10)+((3600*5)/60);
   }
   else{
@@ -159,7 +159,7 @@ void mouseClicked(){
    }
   }
   if(mouseX> 870 && mouseX < 960 && mouseY>180 && mouseY<230){ 
-   if(cooktime==1){
+   if(settime==1){
     timer1=(timer1*10)+((3600*6)/60);
   }
   else{
@@ -167,7 +167,7 @@ void mouseClicked(){
    }
   }
   if(mouseX> 700 && mouseX < 780 && mouseY>240 && mouseY<290){ 
-  if(cooktime==1){
+  if(settime==1){
     timer1=(timer1*10)+((3600*7)/60);
   }
   else{
@@ -175,7 +175,7 @@ void mouseClicked(){
    }
   }
   if(mouseX> 785 && mouseX < 860 && mouseY>240 && mouseY<290){ 
-  if(cooktime==1){
+  if(settime==1){
     timer1=(timer1*10)+((3600*8)/60);
   }
   else{
@@ -183,7 +183,7 @@ void mouseClicked(){
    }
   }
   if(mouseX> 870 && mouseX < 960 && mouseY>240 && mouseY<290){ 
-  if(cooktime==1){
+  if(settime==1){
     timer1=(timer1*10)+((3600*9)/60);
   }
   else{
@@ -191,7 +191,7 @@ void mouseClicked(){
    }
   }
   if(mouseX> 785 && mouseX < 860 && mouseY>300 && mouseY<350){ 
-  if(cooktime==1){
+  if(settime==1){
      timer1=(timer1*10);
    }
    else{
@@ -200,10 +200,10 @@ void mouseClicked(){
   }
   //Defrost
    if (mouseX > 870 && mouseX < 940 && mouseY > 300 && mouseY < 350){
-    if (cooktime==1){
+    if (settime==1){
       timer1=(timer1*10)+(60*2);
     }
-    else if (cooktime==0){
+    else if (settime==0){
       timer +=(3600*2);
     }
   }
@@ -211,9 +211,9 @@ void mouseClicked(){
 
     //Start(30sec)
    if (mouseX > 870 && mouseX < 940 && mouseY > 380 && mouseY < 430){
-    if (cooktime==1){
+    if (settime==1){
       timer=timer1;
-      cooktime=0;
+      settime=0;
     }
     else {
       timer +=(3600/2);
@@ -223,7 +223,7 @@ void mouseClicked(){
    if (mouseX > 700 && mouseX < 780 && mouseY > 380 && mouseY < 430){
     
       timer1=0;
-      cooktime=0;
+      settime=0;
       timer=0;
     }
     
@@ -243,6 +243,6 @@ void mouseClicked(){
   }
     //set time
    if(mouseX > 700 && mouseX < 775 && mouseY>300 && mouseY<350){ 
-     cooktime = 1;
+     settime = 1;
  } 
 }
